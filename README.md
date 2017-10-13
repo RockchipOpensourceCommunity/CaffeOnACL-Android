@@ -24,13 +24,13 @@ git clone --recursive https://github.com/RockchipOpensourceCommunity/CaffeOnACL-
 cd CaffeOnACL-Android
 export NDK_ROOT=<path/to/your/ndk/root>
 
-# build caffe
+# Build Caffe
 ./build_caffe.sh
 
-# download network
+# Download network
 ./model_download.sh
 
-# prepare data for RK3399 device
+# Prepare data for RK3399 device
 ./model_prepare.sh
 
 # Running SquezzeNet network (default is AlexNet, support AlexNet, GoogLeNet, SquezzeNet, MobileNet)
