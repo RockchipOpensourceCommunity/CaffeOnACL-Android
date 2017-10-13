@@ -1,9 +1,9 @@
 #!/bin/bash
 
 TEST_CAFFE=/data/test_caffe
-ANDROID_LIB=android_lib
-CAFFE_ON_ACL_LIBRARY=$ANDROID_LIB/CaffeOnACL
-COMPUTE_LIBRARY=$ANDROID_LIB/ComputeLibrary
+PREBUILTS_LIB=prebuilts
+CAFFE_ON_ACL_LIBRARY=$PREBUILTS_LIB/CaffeOnACL
+COMPUTE_LIBRARY=$PREBUILTS_LIB/ComputeLibrary
 
 adb wait-for-device
 adb root

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-export NDK_ROOT=~/android/android-ndks/android-ndk-r15c
+#export NDK_ROOT=~/android/android-ndks/android-ndk-r15c
 
 if [ -z "$NDK_ROOT" ] && [ "$#" -eq 0 ]; then
     echo "Either NDK_ROOT should be set or provided as argument"

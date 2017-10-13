@@ -128,7 +128,7 @@ class ModelRunner(object):
 def main():
 
   parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-  parser.add_argument('--network', default='squezzenet', help='Input network name, support: alexnet, googlenet, squezzenet, mobilenet')
+  parser.add_argument('--network', default='AlexNet', help='Input network name, support: AlexNet, googLeNet, SquezzeNet, MobileNet')
   args = parser.parse_args()
 
   running_mode_list = ['ACL/NEON', 'OpenBLAS', 'ACL/GPU', 'Mixed']
@@ -156,13 +156,14 @@ def main():
   runner = ModelRunner(test_caffe, export_flags, task_set_cmd, caffe_bin, mean, labels, image)
 
   for running_mode in running_mode_list:
-    if args.network == 'alexnet':
+    print args.network
+    if args.network.lower() == 'alexnet':
       runner.run_alexnet(running_mode)
-    elif args.network == 'googlenet':
+    elif args.network.lower() == 'googlenet':
       runner.run_googlenet(running_mode)
-    elif args.network == 'squezzenet':
+    elif args.network.lower() == 'squezzenet':
       runner.run_squezzenet(running_mode)
-    elif args.network == 'mobilenet':
+    elif args.network.lower() == 'mobilenet':
       runner.run_mobilenet(running_mode)
     else:
       raise error_to_exit('Unsupported Network: ' + args.network)
