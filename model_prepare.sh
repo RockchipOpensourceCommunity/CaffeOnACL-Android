@@ -46,8 +46,8 @@ adb push CaffeOnACL/models/MobileNet/mobilenet_deploy.prototxt $MOBILE_NET
 adb push CaffeOnACL/models/MobileNet/mobilenet.caffemodel $MOBILE_NET
 
 # prepare classification binary
-adb push $CAFFE_ON_ACL/bin/classification_profiling $TEST_CAFFE
-adb push $CAFFE_ON_ACL/bin/classification_profiling_gpu $TEST_CAFFE
+adb push $CAFFE_ON_ACL_LIBRARY/bin/classification_profiling $TEST_CAFFE
+adb push $CAFFE_ON_ACL_LIBRARY/bin/classification_profiling_gpu $TEST_CAFFE
 
 # prepare spinning robot
 adb install -r prebuilts/BasicGLSurfaceView.apk
