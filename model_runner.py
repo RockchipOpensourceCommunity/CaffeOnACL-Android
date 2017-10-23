@@ -161,7 +161,7 @@ def main():
       runner.run_alexnet(running_mode)
     elif args.network.lower() == 'googlenet':
       runner.run_googlenet(running_mode)
-    elif args.network.lower() == 'squezzenet':
+    elif args.network.lower() == 'squeezenet':
       runner.run_squezzenet(running_mode)
     elif args.network.lower() == 'mobilenet':
       runner.run_mobilenet(running_mode)
