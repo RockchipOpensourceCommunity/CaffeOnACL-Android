@@ -30,21 +30,25 @@ export NDK_ROOT=<path/to/your/ndk/root>
 # Download network
 ./model_download.sh
 
-# Prepare data for RK3399 device
+# Prepare model data for RK3399 device
 ./model_prepare.sh
 
-# Running SquezzeNet network (default is AlexNet, support AlexNet, GoogLeNet, SquezzeNet, MobileNet)
-./model_runner.py SquezzeNet
+# Update binary data for RK3399 device
+./binary_update.sh
+
+# Running SqueezeNet network (default is AlexNet, support AlexNet, GoogLeNet, SqueezeNet, MobileNet)
+./model_runner.py SqueezeNet
 
 ```
 
 ## Prebuilts
-* Arm Compute Library : ver. 17.09
-* OpenBLAS            : ver. 0.2.20
-* Boost               : ver. 1.65
-* glog                : ver. 0.3.3
-* gflags              : ver. 2.2.0
-* protobuf            : ver. 3.1.0
-* lmdb                : ver. 0.9.21
-* OpenCV              : ver. 3.3.0
-
+Library|Version
+:---:|:---:
+Arm Compute Library |v17.10
+OpenBLAS|v0.2.20
+Boost|v1.65
+glog|v0.3.3
+gflags|v2.2.0
+protobuf|v3.1.0
+lmdb|v0.9.21
+OpenCV|v3.3.0

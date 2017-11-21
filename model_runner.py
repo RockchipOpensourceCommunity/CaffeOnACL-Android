@@ -104,9 +104,9 @@ class ModelRunner(object):
 
     self.run_model(running_mode, net_name, proto_txt, caffe_model, mixed_value)
 
-  # run SquezzeNet
-  def run_squezzenet(self, running_mode):
-    net_name = 'SquezzeNet'
+  # run SqueezeNet
+  def run_squeezenet(self, running_mode):
+    net_name = 'SqueezeNet'
     net_dir = self.path + '/squezzenet'
     proto_txt = net_dir + '/squeezenet.1.1.deploy.prototxt'
     caffe_model = net_dir + '/squeezenet_v1.1.caffemodel'

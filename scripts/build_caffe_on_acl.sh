@@ -29,7 +29,7 @@ export OpenBLAS_HOME="${ANDROID_LIB_ROOT}/openblas"
 # export ACL library
 export ACL_DIR="${ANDROID_LIB_ROOT}/ComputeLibrary"
 
-rm -rf "${BUILD_DIR}"
+#rm -rf "${BUILD_DIR}"
 mkdir -p "${BUILD_DIR}"
 cd "${BUILD_DIR}"
 
