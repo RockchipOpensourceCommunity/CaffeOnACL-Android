@@ -1,6 +1,6 @@
 [submodule "CaffeOnACL"]
 	path = CaffeOnACL
-	url = https://github.com/finley-/CaffeOnACL.git
+	url = https://github.com/RockchipOpensourceCommunity/CaffeOnACL
 [submodule "android-cmake"]
 	path = android-cmake
 	url = https://github.com/finley-/android-cmake
